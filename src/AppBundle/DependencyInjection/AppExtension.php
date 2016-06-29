@@ -4,6 +4,7 @@ namespace AppBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
+use Symfony\Component\DependencyInjection\Definition;
 
 class AppExtension extends Extension
 {
@@ -15,7 +16,11 @@ class AppExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        var_dump($config);
+        $username = isset($config['username']['expression']) ? $config['username']['expression'] : $config['username']['scalar'];
+        $password = isset($config['password']['expression']) ? $config['password']['expression'] : $config['password']['scalar'];
+
+        $def = new Definition('AppBundle\\Foo', [$config['dsn_expression'], $username, $password]);
+        $container->setDefinition('foo', $def);
     }
 
     /**

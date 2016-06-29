@@ -69,7 +69,8 @@ swiftmailer:
     spool:     { type: memory }
 
 app:
-    dsn_expression: "service('dsn_registry').getDsn()"
+#    dsn_expression: "service('dsn_registry').getDsn()"
+    dsn_expression: "env('DSN')"
     username: foobar
     password:
         expression: "env('SOME_PASSWORD')"

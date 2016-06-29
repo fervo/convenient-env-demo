@@ -17,7 +17,7 @@ class Configuration implements ConfigurationInterface
                 ->expressionNode('dsn_expression')
                     ->info('An expression to get the DSN')
                     ->example("env('DATABASE_URL')")
-                    ->defaultNull()
+                    ->isRequired()
                 ->end()
                 ->arrayNode('username')
                     ->beforeNormalization()

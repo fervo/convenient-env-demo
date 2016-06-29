@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "093ef6e5e5dd03e8cad0baf1a1aaa344",
-    "content-hash": "472a1cf121a66551aa29e024318f0046",
+    "hash": "f94dfbacd610c1629ce0c119e94997fa",
+    "content-hash": "9520ff40a3f740efa4009f58b1999f3a",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1752,16 +1752,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "dev-convenient-env-dev",
+            "version": "dev-convenient-env",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fervo/symfony.git",
-                "reference": "d9867fe11081633b887457b0e161e277bd104649"
+                "reference": "1e454874b0563347bdcd0b8a470ec1da53c2a423"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fervo/symfony/zipball/d9867fe11081633b887457b0e161e277bd104649",
-                "reference": "d9867fe11081633b887457b0e161e277bd104649",
+                "url": "https://api.github.com/repos/fervo/symfony/zipball/1e454874b0563347bdcd0b8a470ec1da53c2a423",
+                "reference": "1e454874b0563347bdcd0b8a470ec1da53c2a423",
                 "shasum": ""
             },
             "require": {
@@ -1887,9 +1887,9 @@
                 "framework"
             ],
             "support": {
-                "source": "https://github.com/fervo/symfony/tree/convenient-env-dev"
+                "source": "https://github.com/fervo/symfony/tree/convenient-env"
             },
-            "time": "2016-06-27 17:39:33"
+            "time": "2016-06-29 16:53:46"
         },
         {
             "name": "twig/twig",
@@ -2066,7 +2066,7 @@
         {
             "alias": "3.2.0",
             "alias_normalized": "3.2.0.0",
-            "version": "dev-convenient-env-dev",
+            "version": "dev-convenient-env",
             "package": "symfony/symfony"
         }
     ],
